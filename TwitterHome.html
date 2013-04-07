@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html> 
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/JavaScript" src="Script.js"></script> 
+<link rel="stylesheet" type="text/css" href="Style.css" media="screen" />
+</head> 
+<body>
+<h1> Twitter Search Application</h1>
+ <table  width="100%" cellpadding="3" cellspacing="3">
+     <br/>
+     <tr>
+         <td>Search Word</td>
+         <td>Number of Tweets</td>
+         <td>Refreshing Time(sec.)</td>
+     </tr>
+	<tr>
+		<td> <input type="text" width="5" height="100" name="srctxt" id="srctxt" ></td>
+		<td><input type="number" width="5" height="100" name="twitcnt" id="twitcnt" ></td>
+		<td> <input type="number" width="5" height="100" name="time" id="time" ></td>
+		<td><button onclick="execute(document.getElementById('srctxt').value,document.getElementById('twitcnt').value,document.getElementById('time').value)" name="btn">SEARCH!</button></td>
+	</tr>
+</table>
+  <div id="twitlist" >
+        Tweets will go here.
+    </div>
+   </body>
+</html>
